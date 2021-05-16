@@ -11,6 +11,66 @@ Licence under Creative Commons Attribution 3.0
 /* Reset
 ---------------------------------*/
 
+
+.service_block img {
+	width: 100%;
+	min-width: 200px;
+}
+
+.hero_img {
+	opacity: 0.6;
+}
+
+
+:root {
+	--hero-gap: 0px;
+}
+
+.parallax {
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	perspective: 10px;
+}
+
+.parallax_layer-back {
+	position: relative;
+	width: 100%;
+	height: calc(100vh - var(--hero-gap));
+	min-height: 800px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+
+.parallax_layer-back img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 110%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	transform: translateZ(1.5px);
+	object-position: 51% 15%;
+	margin: 0;
+}
+
+.parallax-text {
+	z-index: 20;
+	transform: translateZ(-2px) scale(1.2);
+}
+
+.parallax_layer-front {
+	position: relative;
+	margin: 0;
+	padding: var(--hero-gap) 2rem;
+}
+
+
+/* tarik above */
+
+
 .bglayer {
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -74,7 +134,7 @@ Licence under Creative Commons Attribution 3.0
 }
 .styled div {
 	display: inline-block;
-	margin-left: 10px;
+	margin-right: 10px;
 	font-size: 28px;
 }
 .styled div span {
@@ -337,10 +397,9 @@ p {
 ---------------------------------*/
 
 #header_wrapper {
-    background: #F3F3F3;
-    padding: 20px 0px;
+    background: #456267;
     box-shadow: 1px 1px 4px rgba(167, 167, 167, 0.44);
-    border-bottom: 1px solid #F8D26B;
+    border-bottom: 1px solid #0096C7;
 }
 
 .header_box {
@@ -411,7 +470,7 @@ p {
 .navStyle ul li a {
     display: block;
     font-size: 14px;
-    color: #222222;
+    color: #ffffff;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
@@ -422,22 +481,22 @@ p {
 }
 
 .navStyle ul li a:hover {
-    color: #ED5441;
+    color: #00B4D8;
 }
 
 .navStyle > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    color: #ED5441;
+    color: #00B4D8;
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #FCB109;
+    color: #023E8A;
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #FCB109;
+    color: #023E8A;
     border-radius: 0;
     background: transparent;
 }
@@ -447,7 +506,7 @@ display:none;
 .navStyle > li.active > a,
 .navStyle > li.active > a:hover {
     text-decoration: none;
-    color: #ED5441;
+    color: #00B4D8;
     background-color: transparent;
 }
 
@@ -467,11 +526,11 @@ display:none;
 ---------------------------------*/
 
 .top_cont_outer {
-    background: #ED5441;
+    /*background: #000000;
     position: relative; 
 	opacity: 0.6;
     background: url('../img/main2.jpg') no-repeat;
-	background-size: cover; 
+	background-size: cover;*/
 }
 
 .hero_section {
@@ -479,7 +538,7 @@ display:none;
     padding-top: 14px;
 }
 .hero_wrapper {
-height: 750px;
+height: 100vh;
 }
 .white_pad {
     position: relative;
@@ -494,7 +553,7 @@ height: 750px;
 }
 
 .top_left_cont {
-    padding: 245px 0;
+    padding: 30% 0 245px 0;
 }
 
 .top_left_cont h3 {
@@ -569,8 +628,8 @@ a.read_more2:hover, a.read_more:hover {
 }
 a.read_more:hover {
     background: #fff;
-    color: #ED5441;
-    border: 1px solid #ED5441;
+    color: #00B4D8;
+    border: 1px solid #00B4D8;
 }
 
 	
@@ -607,7 +666,7 @@ a.read_more:hover {
 .service_icon {  
     width: 90px;
     height: 85px;
-    margin: 0px auto 25px; 
+    margin: 25px auto 25px; 
 }
 
  
@@ -618,11 +677,11 @@ a.read_more:hover {
     height: 89px;
     width: 89px;
     border-radius: 50%;
-    border: 3px solid #FCB109;
+    border: 3px solid #023E8A;
 }
 
 .service_icon i {
-  color: #FCB109;
+  color: #023E8A;
   font-size: 35px;
   margin-top: 0;
   position: relative;
@@ -722,18 +781,18 @@ a.contact_btn {
     text-align: center;
     line-height: 49px;
     font-size: 16px;
-    color: #ED5441;
+    color: #00B4D8;
     border-radius: 3px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    border: 2px solid #ED5441;
+    border: 2px solid #00B4D8;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
 }
 
 a.contact_btn:hover {
-    background: #ED5441;
+    background: #00B4D8;
     color: #fff;
 }
 
@@ -767,7 +826,7 @@ a.contact_btn:hover {
     padding: 10px 22px;
     font-size: 12px;
     line-height: 20px;
-    color: #222222;
+    color: #ffffff;
     border-radius: 4px;
     text-transform: uppercase;
     background: #f7f7f7;
@@ -778,7 +837,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a:hover {
-    background: #ED5441;
+    background: #00B4D8;
     color: #fff;
     text-decoration: none;
 }
@@ -808,7 +867,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a.current {
-    background: #ED5441;
+    background: #00B4D8;
     color: #fff;
     text-decoration: none;
 }
@@ -941,7 +1000,7 @@ background-position-y: 70px;
 /* color: #6C6C6C; */
 }
 #about-us .read-more{
-	border: 1px solid #ED5441;
+	border: 1px solid #00B4D8;
 	color: #1a1a1a;
 }
 
@@ -1174,7 +1233,7 @@ transition: all .3s;
 }
 
 .contact_block_icon.icon2 {
-    border-color: #ED5441;
+    border-color: #00B4D8;
 }
 
 .contact_block_icon.icon3 {
@@ -1191,11 +1250,11 @@ transition: all .3s;
 }
 
 .contact_block_icon.icon2 {
-    border-color: #ED5441;
+    border-color: #00B4D8;
 }
 
 .contact_block_icon.icon2 span {
-    background: #ED5441;
+    background: #00B4D8;
 }
 
 .contact_block_icon.icon3 {
@@ -1270,7 +1329,7 @@ transition: all .3s;
     text-align: center;
     line-height: 50px;
     font-size: 25px;
-    color: #FCB109;
+    color: #023E8A;
 }
 
 .social_links li a:hover, .social_links li a:focus {
@@ -2014,9 +2073,8 @@ text-align: center;
 p{
 font-size:14px;
 }
-.top_cont_outer { 
-height: 335px;
-}
+
+
 .hero_section {
 position: relative;
 padding-top: 10px;
@@ -2080,7 +2138,7 @@ font-size: 30px;
 padding: 60px 0 50px;
 } 
 .navbar-inverse .navbar-toggle .icon-bar{
-background:#ED5441;
+background:#00B4D8;
 }
 .navbar-inverse .navbar-toggle {
 border-color: transparent;
