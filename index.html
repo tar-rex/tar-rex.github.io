@@ -149,16 +149,19 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/isInViewport.min.js"></script>
 		<script>
+			var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+			if (isMobile) {
+				/* your code here */
+			}
 			AOS.init();
 			var scrollable = $('.parallax');			
 			scrollable.scroll(function () {
 				AOS.init({
-  					disable: 'phone'
-				});
+  					disable: isMobile
 			});
 			$(window).scroll(function() {
 				AOS.init({
-  					disable: 'phone'
+  					disable: isMobile
 				});
 			});
 
@@ -168,7 +171,7 @@
 			document.getElementById("parallax").addEventListener("gesturechange", iphoneScroll, false);
 			function iphoneScroll() {
 				AOS.init({
-  					disable: 'phone'
+  					disable: isMobile
 				});
 			}
 
