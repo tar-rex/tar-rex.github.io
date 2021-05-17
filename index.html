@@ -150,6 +150,7 @@
 		<script type="text/javascript" src="js/isInViewport.min.js"></script>
 		<script>
 			var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+			isMobile = isMobile || (navigator.userAgent.match(/Mac/) && navigator.maxTouchPoints && navigator.maxTouchPoints > 2);
 			AOS.init({
   					disable: isMobile
 			});
