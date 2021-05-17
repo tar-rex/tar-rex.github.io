@@ -152,10 +152,14 @@
 			AOS.init();
 			var scrollable = $('.parallax');			
 			scrollable.scroll(function () {
-				AOS.init();
+				AOS.init({
+  					disable: false
+				});
 			});
 			$(window).scroll(function() {
-				AOS.init();
+				AOS.init({
+  					disable: false
+				});
 			});
 			
 			document.getElementById("parallax").addEventListener("touchmove", iphoneScroll, false);
@@ -163,7 +167,9 @@
 			document.getElementById("parallax").addEventListener("touchend", iphoneScroll, false);
 			document.getElementById("parallax").addEventListener("gesturechange", iphoneScroll, false);
 			function iphoneScroll() {
-				AOS.init();
+				AOS.init({
+  					disable: false
+				});
 			}
 		</script>
 		
