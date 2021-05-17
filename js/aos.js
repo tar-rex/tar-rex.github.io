@@ -63,6 +63,32 @@ const initializeScroll = function initializeScroll() {
       handleScroll($aosElements, options.once);
     }, options.throttleDelay)
   );
+  
+  
+  document.getElementById("parallax").addEventListener(
+    'scroll',
+    throttle(() => {
+      handleScroll($aosElements, options.once);
+    }, options.throttleDelay)
+  );
+  document.getElementById("parallax").addEventListener(
+    'scroll',
+    throttle(() => {
+      handleScroll($aosElements, options.once);
+    }, options.throttleDelay)
+  );
+  document.getElementById("parallax").addEventListener(
+    'scroll',
+    throttle(() => {
+      handleScroll($aosElements, options.once);
+    }, options.throttleDelay)
+  );
+  document.getElementById("parallax").addEventListener(
+    'scroll',
+    throttle(() => {
+      handleScroll($aosElements, options.once);
+    }, options.throttleDelay)
+  );
 
   return $aosElements;
 };
