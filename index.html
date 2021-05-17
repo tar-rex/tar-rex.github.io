@@ -150,14 +150,14 @@
 		<script type="text/javascript" src="js/isInViewport.min.js"></script>
 		<script>
 			AOS.init();
-			var scrollable = $('body');			
+			var scrollable = $('.parallax');			
 			scrollable.scroll(function () {
 				AOS.init();
 			});
 			$(window).scroll(function() {
 				AOS.init();
 			});
-			$('body').addEventListener('gesturechange', function() {
+			$('.parallax').addEventListener('gesturechange', function() {
 				AOS.init();
 			});
 		</script>
