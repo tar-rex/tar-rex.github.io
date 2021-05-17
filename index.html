@@ -152,25 +152,12 @@
 			AOS.init();
 			var scrollable = $('.parallax');			
 			scrollable.scroll(function () {
-				AOS.init({
-  					disable: false
-				});
+				AOS.init();
 			});
 			$(window).scroll(function() {
-				AOS.init({
-  					disable: false
-				});
+				AOS.init();
 			});
-			
-			document.getElementById("parallax").addEventListener("touchmove", iphoneScroll, false);
-			document.getElementById("parallax").addEventListener("scroll", iphoneScroll, false);
-			document.getElementById("parallax").addEventListener("touchend", iphoneScroll, false);
-			document.getElementById("parallax").addEventListener("gesturechange", iphoneScroll, false);
-			function iphoneScroll() {
-				AOS.init({
-  					disable: false
-				});
-			}
+
 		</script>
 		
 		
