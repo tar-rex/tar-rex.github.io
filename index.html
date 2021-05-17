@@ -157,9 +157,14 @@
 			$(window).scroll(function() {
 				AOS.init();
 			});
-			$('.parallax').addEventListener('gesturechange', function() {
+			
+			document.addEventListener("touchmove", iphoneScroll, false);
+			document.addEventListener("scroll", iphoneScroll, false);
+			document.addEventListener("touchend", iphoneScroll, false);
+			document.addEventListener("gesturechange", iphoneScroll, false);
+			function iphoneScroll() {
 				AOS.init();
-			});
+			}
 		</script>
 		
 		
