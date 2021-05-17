@@ -150,10 +150,9 @@
 		<script type="text/javascript" src="js/isInViewport.min.js"></script>
 		<script>
 			var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-			if (isMobile) {
-				/* your code here */
-			}
-			AOS.init();
+			AOS.init({
+  					disable: isMobile
+			});;
 			var scrollable = $('.parallax');			
 			scrollable.scroll(function () {
 				AOS.init({
