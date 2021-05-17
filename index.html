@@ -152,11 +152,12 @@
 			var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 			AOS.init({
   					disable: isMobile
-			});;
+			});
 			var scrollable = $('.parallax');			
 			scrollable.scroll(function () {
 				AOS.init({
   					disable: isMobile
+				});
 			});
 			$(window).scroll(function() {
 				AOS.init({
@@ -172,7 +173,7 @@
 				AOS.init({
   					disable: isMobile
 				});
-			}
+			};
 
 		</script>
 		
