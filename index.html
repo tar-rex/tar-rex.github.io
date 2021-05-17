@@ -25,7 +25,7 @@
 	</head>
 	<body>
 
-		<div class="parallax">
+		<div class="parallax" id="parallax">
 			<div class="parallax_layer-back">
 				<!--Hero_Section-->
 				<section id="hero_section" class="top_cont_outer">
@@ -158,10 +158,10 @@
 				AOS.init();
 			});
 			
-			scrollable.addEventListener("touchmove", iphoneScroll, false);
-			scrollable.addEventListener("scroll", iphoneScroll, false);
-			scrollable.addEventListener("touchend", iphoneScroll, false);
-			scrollable.addEventListener("gesturechange", iphoneScroll, false);
+			document.getElementById("parallax").addEventListener("touchmove", iphoneScroll, false);
+			document.getElementById("parallax").addEventListener("scroll", iphoneScroll, false);
+			document.getElementById("parallax").addEventListener("touchend", iphoneScroll, false);
+			document.getElementById("parallax").addEventListener("gesturechange", iphoneScroll, false);
 			function iphoneScroll() {
 				AOS.init();
 				alert("activated");
