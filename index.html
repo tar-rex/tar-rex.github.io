@@ -158,10 +158,10 @@
 				AOS.init();
 			});
 			
-			document.addEventListener("touchmove", iphoneScroll, false);
-			document.addEventListener("scroll", iphoneScroll, false);
-			document.addEventListener("touchend", iphoneScroll, false);
-			document.addEventListener("gesturechange", iphoneScroll, false);
+			scrollable.addEventListener("touchmove", iphoneScroll, false);
+			scrollable.addEventListener("scroll", iphoneScroll, false);
+			scrollable.addEventListener("touchend", iphoneScroll, false);
+			scrollable.addEventListener("gesturechange", iphoneScroll, false);
 			function iphoneScroll() {
 				AOS.init();
 				alert("activated");
