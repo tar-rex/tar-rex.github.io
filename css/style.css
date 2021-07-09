@@ -464,7 +464,7 @@ p {
 }
 
 .navStyle ul li:last-child {
-    margin: 0 0 0 23px;
+    /*margin: 0 0 0 23px*/;
 }
 
 .navStyle ul li a {
